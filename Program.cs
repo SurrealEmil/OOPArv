@@ -4,9 +4,33 @@
     {
         static void Main(string[] args)
         {
+            Animal newAnimal = new Animal("Djuret", 3, 0, false, "reptil");
+            Bird jennetBird = new Bird("Jennet", 20, 2, true);
+            Cat pepperCat = new Cat("Pepper", 11, 4, true);
+            Dog lisaDog = new Dog("Lisa", 1, 4, "jämthund");
             Bulldog mybulldog = new Bulldog("Hank", 5, 3, "Brun");
+            Chihuahua myChihuahua = new Chihuahua("Tindra", 7, 4, 3);
 
-            mybulldog.Eating();
+            newAnimal.MakeSound();
+            jennetBird.MakeSound();
+            pepperCat.MakeSound();
+            lisaDog.MakeSound();
+            mybulldog.MakeSound();
+            myChihuahua.MakeSound();
+
+            newAnimal.Eating();
+            newAnimal.Sleeping();
+            newAnimal.Moving();
+
+            jennetBird.Flying();
+
+            pepperCat.Climbing();
+
+            lisaDog.ChaseBall();
+
+            mybulldog.Guarding();
+
+            myChihuahua.Shaking();
         }
     }
 
@@ -106,7 +130,7 @@
 
         public override void MakeSound()
         {
-            Console.WriteLine($"{Name} skäller: Voff! voff!");
+            Console.WriteLine($"{Name} skäller: woff! woff!");
         }
     }
 
@@ -127,7 +151,7 @@
 
         public override void MakeSound()
         {
-            Console.WriteLine($"{Name} skäller grovt: Voff! voff!");
+            Console.WriteLine($"{Name} skäller grovt: woff! woff!");
         }
     }
 
@@ -143,12 +167,12 @@
 
         public void Shaking()
         {
-            Console.WriteLine($"{Name} står och skakar");
+            Console.WriteLine($"{Name} skakar");
         }
 
         public override void MakeSound()
         {
-            Console.WriteLine($"{Name} skäller svagt: voff! voff!");
+            Console.WriteLine($"{Name} skäller svagt: woff! woff!");
         }
     }
 }
