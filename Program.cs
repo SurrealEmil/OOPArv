@@ -22,9 +22,13 @@
             mybulldog.MakeSound();
             myChihuahua.MakeSound();
 
+            Console.WriteLine("\n--------------------------\n");
+
             newAnimal.Eating();
             newAnimal.Sleeping();
             newAnimal.Moving();
+
+            Console.WriteLine("\n--------------------------\n");
 
             jennetBird.Flying();
 
